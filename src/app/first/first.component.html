@@ -1,0 +1,23 @@
+
+<div>Examples </div>
+
+
+<div>Copy push reference <button (click)="copy1()">Copy 1</button></div>
+<div>Copy set this.data2 = this.data1<button (click)="copy2()">Copy 2 </button></div>
+<div>Copy this.data2 with object.assign push<button (click)="copy3()">Copy 3 </button></div>
+<div>Copy set this.data2 = Object.assign(this.data1) <button (click)="copy4()">Copy 4 </button></div>
+<div>Copy with new object<button (click)="copy5()">Copy 5 </button></div>
+
+<div>Clear data2=[] <button (click)="clear()">clear()</button></div>
+
+<div>Change data2<button (click)="change()">Change</button></div>
+
+<div *ngFor="let n of data1">
+  {{n.title}}
+</div>
+
+<div *ngFor="let n of data2">
+  {{n.title}}
+</div>
+
+
