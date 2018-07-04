@@ -30,12 +30,12 @@ export class FirstComponent implements OnInit {
     }
     public copy3() {
       this.data1.forEach(a => {
-        this.data2.push(Object.assign(a));
+        this.data2.push(Object.assign({}, a));
       });
     }
 
   public copy4() {
-    this.data2 = Object.assign(this.data1);
+    this.data2 = Object.assign({}, this.data1);
   }
   public copy5(){
     this.data1.forEach(a => {
